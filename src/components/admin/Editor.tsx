@@ -10,7 +10,6 @@ const TABS: [keyof Content, string, string][] = [
   ["copy", "Page texts", "Headings, buttons, hero, form labels, footer and legal pages."],
   ["packages", "Pricing", "Edit the pricing plans: name, price, features. Add or remove plans."],
   ["services", "Services", "The service cards (also the options in the contact form)."],
-  ["projects", "Projects", "Selected project cards."],
   ["faqs", "FAQ", "Questions and answers."],
   ["site", "Company & contact", "Name, email, phone, address, social links."],
   ["nav", "Navigation", "Header and footer menu."],
