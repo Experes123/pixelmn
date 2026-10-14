@@ -26,10 +26,11 @@ export function SectionHead({ eyebrow, title, text }: { eyebrow: string; title: 
 }
 
 export function Button({ href, children, variant = "primary", className = "", ...rest }:
-  { href: string; children: ReactNode; variant?: "primary" | "ghost" | "accent"; className?: string } & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+  { href: string; children: ReactNode; variant?: "primary" | "ghost" | "accent" | "glass"; className?: string } & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
   const styles = {
     primary: "bg-ink text-white hover:bg-accent",
     accent: "bg-accent text-white hover:bg-ink",
+    glass: "border border-white/20 bg-white/[.06] text-white backdrop-blur hover:bg-white hover:text-ink",
     ghost: "border border-ink/15 bg-white text-ink hover:border-ink",
   }[variant];
   return (

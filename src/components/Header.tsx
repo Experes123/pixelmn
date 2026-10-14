@@ -23,17 +23,17 @@ export function Header({ c }: { c: Content }) {
   }, [open]);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled || open ? "border-b border-line bg-white/85 backdrop-blur-xl" : "border-b border-transparent"}`}>
+    <header data-dark={!scrolled && !open} className={`group/h fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled || open ? "border-b border-line bg-white/85 backdrop-blur-xl" : "border-b border-transparent"}`}>
       <Container className="flex h-[72px] items-center justify-between">
-        <a href="#top" aria-label={c.site.name} onClick={() => setOpen(false)}><Logo name={c.site.name.split(" ")[0]} /></a>
+        <a href="#top" aria-label={c.site.name} onClick={() => setOpen(false)}><Logo light={!scrolled && !open} name={c.site.name.split(" ")[0]} /></a>
         <nav aria-label="Үндсэн цэс" className="hidden items-center gap-1 lg:flex">
           {nav.map((n) => (
-            <a key={n.href} href={n.href} className="rounded-full px-4 py-2 text-sm font-medium text-neutral-600 transition-colors hover:bg-mist hover:text-ink">{n.label}</a>
+            <a key={n.href} href={n.href} className="rounded-full px-4 py-2 text-sm font-medium text-neutral-600 transition-colors hover:bg-mist hover:text-ink group-data-[dark=true]/h:text-white/75 group-data-[dark=true]/h:hover:bg-white/10 group-data-[dark=true]/h:hover:text-white">{n.label}</a>
           ))}
         </nav>
         <div className="flex items-center gap-2">
           <a href="#contact" className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-ink sm:inline-block">{c.copy.header.cta}</a>
-          <button className="grid h-11 w-11 place-items-center rounded-full border border-line lg:hidden" aria-expanded={open} aria-controls="mobile-menu"
+          <button className="grid h-11 w-11 place-items-center rounded-full border border-line group-data-[dark=true]/h:border-white/20 group-data-[dark=true]/h:text-white lg:hidden" aria-expanded={open} aria-controls="mobile-menu"
             aria-label={open ? "Цэс хаах" : "Цэс нээх"} onClick={() => setOpen(!open)}>
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
