@@ -3,7 +3,6 @@ import { useEffect, useState, type ReactNode } from "react";
 import { Eye, EyeOff, Lock, LogOut, ShieldCheck, Copy, Sparkles } from "lucide-react";
 
 export const CREDS: Record<string, { user: string; pass: string }> = {
-  code: { user: "admin@code.demo", pass: "Code#2026" },
   barber: { user: "owner@barber.demo", pass: "Barber#2026" },
   company: { user: "admin@northwind.demo", pass: "Northwind#2026" },
   restaurant: { user: "manager@shiree.demo", pass: "Shiree#2026" },
