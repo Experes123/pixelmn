@@ -1,72 +1,69 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { Building2, Globe2, ShieldCheck, TrendingUp, Trash2 } from "lucide-react";
-import { uid, useLocal, useToast, Toast, Stat } from "./kit";
+import { ArrowUpRight, Building2, Globe2, ShieldCheck, LineChart, Users, Check, Mail, Phone, MapPin, LayoutDashboard, Inbox, Layers, Plus, Trash2, Wallet, TrendingUp } from "lucide-react";
+import { money, uid, useLocal, useToast, Toast, img, ago, fmtDate, AdminShell, Card, Kpi, BarChart, Chip, Table, inp, btnAcc, btnGhost, Select } from "./kit";
 
-type Site = { headline: string; sub: string; about: string };
-type Lead = { id: string; name: string; email: string; msg: string; done: boolean; at: string };
-const SITE: Site = { headline: "Бизнесийн найдвартай түнш", sub: "Логистик, санхүү, зөвлөх үйлчилгээг нэг дор — 2008 оноос.", about: "Northwind Group нь 15 жилийн турш Монгол, Хятад, Орост бизнес эрхлэгчдэд үйлчилж, 300 гаруй байгууллагын өсөлтөд хувь нэмэр оруулсан." };
-const TEAM = [["Д. Золбоо", "Гүйцэтгэх захирал"], ["Б. Сарнай", "Санхүүгийн захирал"], ["Н. Эрдэнэ", "Үйл ажиллагааны захирал"]];
-const blue = "#13579a";
+type Svc = { id: string; t: string; d: string; on: boolean };
+const ST = ["Шинэ", "Холбогдсон", "Санал илгээсэн", "Гэрээ", "Татгалзсан"] as const;
+type Lead = { id: string; at: string; name: string; co: string; email: string; svc: string; msg: string; value: number; status: (typeof ST)[number] };
+const SVCS: Svc[] = [
+  { id: "a", t: "Стратегийн зөвлөх", d: "Зах зээлийн судалгаа, өсөлтийн төлөвлөгөө, засаглалын шинэчлэл.", on: true },
+  { id: "b", t: "Дижитал шилжилт", d: "Процессыг автоматжуулж, өгөгдлөөр шийдвэр гаргадаг болгоно.", on: true },
+  { id: "c", t: "Санхүү & эрсдэл", d: "Хөрөнгө оруулалтын шинжилгээ, аудит, эрсдэлийн удирдлага.", on: true },
+  { id: "d", t: "Хүний нөөц", d: "Баг бүрдүүлэлт, сургалт, соёл, гүйцэтгэлийн тогтолцоо.", on: true },
+];
+const CO = ["Altan Mining", "Gobi Foods", "Khan Bank X", "Tengri Telecom", "Nomad Logistics", "Orkhon Energy", "Steppe Retail", "Baatar Auto"];
+const NM = ["Б. Энхжин", "Г. Тэмүүлэн", "О. Сарангэрэл", "Д. Билгүүн", "Н. Алтанцэцэг", "Ч. Ганзориг", "Л. Мөнхзул", "Т. Бат-Оргил"];
+const SEED: Lead[] = Array.from({ length: 12 }, (_, i) => ({ id: `L${500 + i}`, at: ago(i, 9 + (i % 7)), name: NM[i % 8], co: CO[i % 8], email: `contact${i}@${CO[i % 8].split(" ")[0].toLowerCase()}.mn`, svc: SVCS[i % 4].t, msg: "Манай компанийн өсөлтийн төлөвлөгөөний талаар уулзмаар байна.", value: (i % 5 + 1) * 12000000, status: ST[i < 2 ? 0 : i % 5] }));
+const TEAM = [["Д. Оюунчимэг", "Гүйцэтгэх захирал", "1573496359142-b8d87734a5a2"], ["Б. Түвшин", "Стратегийн захирал", "1560250097-0b93528c311a"], ["С. Номин", "Санхүүгийн захирал", "1580489944761-15a19d654956"], ["Г. Энхбаяр", "Технологийн захирал", "1507003211169-0a1dd7228f2d"]];
+const navy = "#0b2545";
 
 export function CompanySite() {
-  const [s] = useLocal<Site>("company:site", SITE);
-  const [, setLeads] = useLocal<Lead[]>("company:leads", []);
-  const [f, setF] = useState({ name: "", email: "", msg: "" });
+  const [svcs] = useLocal<Svc[]>("nw2:svcs", SVCS);
+  const [leads, setLeads] = useLocal<Lead[]>("nw2:leads", SEED);
+  const [f, setF] = useState({ name: "", co: "", email: "", svc: SVCS[0].t, msg: "" });
   const [sent, setSent] = useState(false);
-  const icons = [Globe2, ShieldCheck, TrendingUp];
+  const submit = (e: React.FormEvent) => { e.preventDefault(); setLeads((p) => [{ id: `L${uid()}`, at: new Date().toISOString(), ...f, value: 0, status: "Шинэ" }, ...p]); setSent(true); };
   return (
-    <div className="min-h-screen bg-white text-slate-800" style={{ fontFamily: "system-ui, sans-serif" }}>
-      <nav className="sticky top-9 z-40 flex items-center justify-between border-b bg-white/95 px-6 py-4 backdrop-blur">
-        <a href="#top" className="flex items-center gap-2 text-lg font-bold text-[#0b2545]"><Building2 style={{ color: blue }} /> Northwind</a>
-        <div className="flex items-center gap-6 text-sm font-medium">
-          {["Үйлчилгээ", "Тухай", "Баг"].map((l, i) => <a key={l} href={["#svc", "#about", "#team"][i]} className="hidden hover:text-[#13579a] sm:block">{l}</a>)}
-          <a href="#contact" className="hover:text-[#13579a]">Холбогдох</a>
-          <Link href="/demo/company/admin" className="rounded-md bg-[#0b2545] px-4 py-2 text-white hover:bg-[#13579a]">Admin</Link>
-        </div>
+    <div className="bg-white text-[#0b2545]" style={{ fontFamily: "system-ui, sans-serif" }}>
+      <nav className="sticky top-9 z-40 flex items-center justify-between border-b border-black/5 bg-white/85 px-5 py-4 backdrop-blur-xl sm:px-10">
+        <a href="#top" className="flex items-center gap-2 text-lg font-black tracking-tight"><span className="grid h-9 w-9 place-items-center rounded-lg bg-[#0b2545] text-white"><Building2 size={18} /></span> Northwind</a>
+        <div className="flex items-center gap-7 text-sm font-semibold">{[["#services", "Үйлчилгээ"], ["#work", "Төслүүд"], ["#team", "Баг"]].map(([h, l]) => <a key={h} href={h} className="hidden text-neutral-600 hover:text-[#0b2545] md:block">{l}</a>)}<Link href="/demo/company/admin" className="hidden rounded-full border border-black/15 px-4 py-2 sm:block">Admin</Link><a href="#contact" className="rounded-full bg-[#0b2545] px-5 py-2.5 text-white transition hover:bg-[#13579a]">Холбогдох</a></div>
       </nav>
-      <header id="top" className="bg-[#0b2545] px-6 py-24 text-white" style={{ backgroundImage: "linear-gradient(120deg,#0b2545,#13579a)" }}>
-        <div className="mx-auto max-w-5xl"><p className="mb-3 text-sm uppercase tracking-widest text-sky-300">Northwind Group</p><h1 className="max-w-2xl text-4xl font-bold leading-tight sm:text-6xl">{s.headline}</h1><p className="mt-5 max-w-xl text-lg text-sky-100">{s.sub}</p>
-          <a href="#contact" className="mt-8 inline-block rounded-md bg-white px-6 py-3 font-semibold text-[#0b2545]">Үнийн санал авах</a></div>
+      <header id="top" className="relative isolate overflow-hidden bg-[#0b2545] px-5 py-24 text-white sm:px-10 sm:py-32">
+        <img src={img("1497366216548-37526070297c", 1800)} alt="" className="absolute inset-0 -z-20 h-full w-full object-cover opacity-30" /><div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#0b2545] via-[#0b2545]/85 to-transparent" />
+        <div className="mx-auto max-w-6xl"><p className="mb-5 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest">Since 2009 · Ulaanbaatar</p>
+          <h1 className="max-w-3xl text-5xl font-black leading-[1.02] tracking-tight sm:text-7xl">Том ирээдүйг <span className="text-[#6cb2ff]">тууштай</span> бүтээнэ.</h1>
+          <p className="mt-7 max-w-xl text-lg text-white/75">Northwind Group — уул уурхай, санхүү, технологийн салбарт 200 гаруй байгууллагад өсөлтийн стратегийг хэрэгжүүлсэн зөвлөх групп.</p>
+          <div className="mt-10 flex flex-wrap gap-4"><a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 font-bold text-[#0b2545] transition hover:bg-[#6cb2ff]">Зөвлөгөө авах <ArrowUpRight size={18} /></a><a href="#work" className="rounded-full border border-white/30 px-8 py-4 font-bold hover:bg-white/10">Төслүүд үзэх</a></div></div>
       </header>
-      <section className="border-b"><div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 px-6 py-10 text-center sm:grid-cols-4">{[["15+", "жил"], ["300+", "харилцагч"], ["3", "улс"], ["98%", "сэтгэл ханамж"]].map(([a, b]) => <div key={b}><div className="text-3xl font-bold text-[#13579a]">{a}</div><div className="text-sm text-slate-500">{b}</div></div>)}</div></section>
-      <section id="svc" className="mx-auto max-w-5xl px-6 py-20"><h2 className="mb-10 text-3xl font-bold text-[#0b2545]">Үйлчилгээ</h2>
-        <div className="grid gap-6 sm:grid-cols-3">{[["Олон улсын логистик", "Хятад, Орос чиглэлийн ачаа тээвэр, гаалийн бүрдүүлэлт."], ["Санхүү & аудит", "Тайлан, татвар, дотоод хяналтын зөвлөх үйлчилгээ."], ["Бизнес стратеги", "Зах зээлийн судалгаа, өсөлтийн төлөвлөгөө."]].map(([t, d], i) => { const I = icons[i]; return <div key={t} className="rounded-xl border p-6 transition hover:shadow-lg"><I className="mb-4 text-[#13579a]" /><h3 className="font-semibold">{t}</h3><p className="mt-2 text-sm text-slate-500">{d}</p></div>; })}</div></section>
-      <section id="about" className="bg-slate-50 px-6 py-20"><div className="mx-auto max-w-3xl"><h2 className="mb-4 text-3xl font-bold text-[#0b2545]">Бидний тухай</h2><p className="text-lg leading-relaxed text-slate-600">{s.about}</p></div></section>
-      <section id="team" className="mx-auto max-w-5xl px-6 py-20"><h2 className="mb-10 text-3xl font-bold text-[#0b2545]">Удирдлагын баг</h2>
-        <div className="grid gap-6 sm:grid-cols-3">{TEAM.map(([n, r]) => <div key={n} className="text-center"><div className="mx-auto mb-3 grid h-24 w-24 place-items-center rounded-full bg-[#13579a] text-3xl font-bold text-white">{n[3]}</div><div className="font-semibold">{n}</div><div className="text-sm text-slate-500">{r}</div></div>)}</div></section>
-      <section id="contact" className="bg-[#0b2545] px-6 py-20 text-white"><div className="mx-auto max-w-xl"><h2 className="mb-6 text-3xl font-bold">Холбоо барих</h2>
-        {sent ? <p className="rounded-lg bg-white/10 p-6">✔ Баярлалаа! Бид 24 цагийн дотор хариу өгнө. <button className="ml-2 underline" onClick={() => setSent(false)}>Дахин илгээх</button></p> : (
-          <form className="space-y-3" onSubmit={(e) => { e.preventDefault(); setLeads((p) => [{ id: uid(), ...f, done: false, at: new Date().toLocaleString("mn-MN") }, ...p]); setF({ name: "", email: "", msg: "" }); setSent(true); }}>
-            <input required placeholder="Нэр" value={f.name} onChange={(e) => setF({ ...f, name: e.target.value })} className="w-full rounded-md px-4 py-3 text-slate-900" />
-            <input required type="email" placeholder="Имэйл" value={f.email} onChange={(e) => setF({ ...f, email: e.target.value })} className="w-full rounded-md px-4 py-3 text-slate-900" />
-            <textarea required rows={4} placeholder="Зурвас" value={f.msg} onChange={(e) => setF({ ...f, msg: e.target.value })} className="w-full rounded-md px-4 py-3 text-slate-900" />
-            <button className="rounded-md bg-sky-400 px-6 py-3 font-semibold text-[#0b2545]">Илгээх</button></form>)}</div></section>
+      <section className="mx-auto -mt-12 grid max-w-6xl grid-cols-2 gap-px overflow-hidden rounded-3xl bg-black/5 shadow-2xl lg:grid-cols-4" style={{ position: "relative" }}>{[["15+", "жилийн туршлага"], ["200+", "харилцагч"], ["1,200", "төсөл"], ["98%", "сэтгэл ханамж"]].map(([a, b]) => <div key={b} className="bg-white p-8 text-center"><div className="text-4xl font-black text-[#13579a]">{a}</div><div className="mt-1 text-sm text-neutral-500">{b}</div></div>)}</section>
+      <div className="mx-auto mt-16 max-w-6xl overflow-hidden px-5"><div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm font-black uppercase tracking-widest text-neutral-300">{CO.map((c) => <span key={c}>{c}</span>)}</div></div>
+      <section id="services" className="mx-auto max-w-6xl px-5 py-28 sm:px-10"><p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-[#13579a]">Үйлчилгээ</p><h2 className="mb-14 max-w-2xl text-4xl font-black tracking-tight sm:text-5xl">Бизнесийн бүх түвшинд туслана.</h2>
+        <div className="grid gap-5 md:grid-cols-2">{svcs.filter((s) => s.on).map((s, i) => { const I = [LineChart, Globe2, ShieldCheck, Users][i % 4]; return <div key={s.id} className="group rounded-3xl border border-black/10 p-8 transition hover:-translate-y-1 hover:border-[#13579a] hover:shadow-2xl"><span className="mb-6 grid h-14 w-14 place-items-center rounded-2xl bg-[#e8f1fb] text-[#13579a] transition group-hover:bg-[#13579a] group-hover:text-white"><I size={26} /></span><h3 className="text-2xl font-black">{s.t}</h3><p className="mt-2 text-neutral-600">{s.d}</p></div>; })}</div></section>
+      <section id="work" className="bg-neutral-50 px-5 py-28 sm:px-10"><div className="mx-auto max-w-6xl"><h2 className="mb-14 text-4xl font-black tracking-tight sm:text-5xl">Сонгомол төслүүд</h2>
+        <div className="grid gap-6 md:grid-cols-3">{[["1551434678-e076c223a692", "Altan Mining", "Үйл ажиллагааны өртөг -23%"], ["1519389950473-47ba0277781c", "Tengri Telecom", "Дижитал шилжилт, 12 сар"], ["1522071820081-009f0129c71c", "Gobi Foods", "Экспортын шинэ зах зээл"]].map(([p, t, s]) => <article key={t} className="group overflow-hidden rounded-3xl bg-white shadow-sm transition hover:shadow-2xl"><div className="aspect-[4/3] overflow-hidden"><img src={img(p, 800)} alt={t} loading="lazy" className="h-full w-full object-cover transition duration-700 group-hover:scale-110" /></div><div className="p-6"><h3 className="text-xl font-black">{t}</h3><p className="mt-1 text-sm text-neutral-500">{s}</p></div></article>)}</div></div></section>
+      <section id="team" className="mx-auto max-w-6xl px-5 py-28 sm:px-10"><h2 className="mb-14 text-4xl font-black tracking-tight sm:text-5xl">Удирдлагын баг</h2><div className="grid grid-cols-2 gap-6 lg:grid-cols-4">{TEAM.map(([n, r, p]) => <div key={n}><div className="mb-4 aspect-[4/5] overflow-hidden rounded-3xl bg-neutral-100"><img src={img(p, 500)} alt={n} loading="lazy" className="h-full w-full object-cover" /></div><div className="font-black">{n}</div><div className="text-sm text-neutral-500">{r}</div></div>)}</div></section>
+      <section id="contact" className="bg-[#0b2545] px-5 py-28 text-white sm:px-10"><div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2"><div><h2 className="text-4xl font-black tracking-tight sm:text-5xl">Ярилцъя.</h2><p className="mt-5 max-w-md text-white/70">Хүсэлтээ үлдээвэл 1 ажлын өдөрт холбогдоно.</p><div className="mt-10 space-y-4 text-white/80"><div className="flex items-center gap-3"><Mail size={18} /> hello@northwind.mn</div><div className="flex items-center gap-3"><Phone size={18} /> +976 7700 1234</div><div className="flex items-center gap-3"><MapPin size={18} /> Peace Avenue 15, Ulaanbaatar</div></div></div>
+        {sent ? <div className="grid place-items-center rounded-3xl bg-white/10 p-10 text-center"><div><Check size={48} className="mx-auto mb-3 text-[#6cb2ff]" /><p className="text-2xl font-black">Баярлалаа!</p><p className="mt-2 text-white/70">Хүсэлт админ самбарт «Шинэ» төлөвтэй орлоо.</p><button className="mt-5 underline" onClick={() => { setSent(false); setF({ ...f, name: "", msg: "" }); }}>Шинэ хүсэлт</button></div></div> :
+          <form onSubmit={submit} className="space-y-3 rounded-3xl bg-white p-7 text-[#0b2545]"><div className="grid gap-3 sm:grid-cols-2"><input required placeholder="Нэр" value={f.name} onChange={(e) => setF({ ...f, name: e.target.value })} className="rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-[#13579a]" /><input placeholder="Компани" value={f.co} onChange={(e) => setF({ ...f, co: e.target.value })} className="rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-[#13579a]" /></div><input required type="email" placeholder="И-мэйл" value={f.email} onChange={(e) => setF({ ...f, email: e.target.value })} className="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-[#13579a]" /><select value={f.svc} onChange={(e) => setF({ ...f, svc: e.target.value })} className="w-full rounded-xl border border-black/15 px-4 py-3">{svcs.map((s) => <option key={s.id}>{s.t}</option>)}</select><textarea required rows={4} placeholder="Таны хүсэлт" value={f.msg} onChange={(e) => setF({ ...f, msg: e.target.value })} className="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-[#13579a]" /><button className="w-full rounded-xl bg-[#0b2545] py-3.5 font-bold text-white transition hover:bg-[#13579a]">Илгээх</button></form>}</div></section>
+      <footer className="bg-[#07182f] px-5 py-8 text-center text-sm text-white/40">© Northwind Group · Демо</footer>
     </div>
   );
 }
 
 export function CompanyAdmin() {
-  const [s, setS] = useLocal<Site>("company:site", SITE);
-  const [leads, setLeads] = useLocal<Lead[]>("company:leads", []);
+  const [svcs, setSvcs] = useLocal<Svc[]>("nw2:svcs", SVCS);
+  const [leads, setLeads] = useLocal<Lead[]>("nw2:leads", SEED);
   const [toast, say] = useToast();
-  return (
-    <div className="min-h-screen bg-slate-100 text-slate-800" style={{ fontFamily: "system-ui, sans-serif" }}>
-      <nav className="flex items-center justify-between bg-[#0b2545] px-6 py-4 text-white"><b>Northwind · Admin</b><Link href="/demo/company" className="rounded-md bg-white px-4 py-1.5 text-sm font-semibold text-[#0b2545]">← Сайт руу</Link></nav>
-      <div className="mx-auto max-w-4xl space-y-8 p-6">
-        <div className="grid gap-3 sm:grid-cols-3"><Stat cls="bg-white shadow-sm" label="Нийт хүсэлт" value={leads.length} /><Stat cls="bg-white shadow-sm" label="Шинэ" value={leads.filter((l) => !l.done).length} /><Stat cls="bg-white shadow-sm" label="Хариу өгсөн" value={leads.filter((l) => l.done).length} /></div>
-        <section className="rounded-xl bg-white p-5 shadow-sm"><h2 className="mb-3 font-bold">Нүүр хуудасны агуулга</h2>
-          {(["headline", "sub", "about"] as const).map((k) => <label key={k} className="mb-3 block text-sm"><span className="mb-1 block text-slate-500">{{ headline: "Гарчиг", sub: "Дэд гарчиг", about: "Бидний тухай" }[k]}</span><textarea rows={k === "about" ? 3 : 1} value={s[k]} onChange={(e) => setS({ ...s, [k]: e.target.value })} className="w-full rounded-md border px-3 py-2" /></label>)}
-          <button onClick={() => say("Хадгалагдлаа (автоматаар)")} className="rounded-md bg-[#13579a] px-4 py-2 text-sm font-semibold text-white">Хадгалах</button>
-          <button onClick={() => { setS(SITE); say("Анхны утга"); }} className="ml-2 text-sm underline">Анхны утга</button></section>
-        <section className="rounded-xl bg-white p-5 shadow-sm"><h2 className="mb-3 font-bold">Ирсэн хүсэлтүүд</h2>
-          {leads.length === 0 && <p className="text-sm text-slate-500">Хүсэлт алга. Сайтын &quot;Холбоо барих&quot; формоор илгээж үзээрэй.</p>}
-          {leads.map((l) => <div key={l.id} className="flex items-start gap-3 border-t py-3 text-sm"><div className="flex-1"><b>{l.name}</b> <span className="text-slate-500">· {l.email} · {l.at}</span><p className="mt-1">{l.msg}</p></div>
-            <button onClick={() => setLeads((p) => p.map((x) => (x.id === l.id ? { ...x, done: !x.done } : x)))} className={`rounded-full px-3 py-1 text-xs font-semibold ${l.done ? "bg-green-100 text-green-700" : "bg-amber-100 text-amber-700"}`}>{l.done ? "Хариу өгсөн" : "Шинэ"}</button>
-            <button aria-label="Устгах" onClick={() => setLeads((p) => p.filter((x) => x.id !== l.id))}><Trash2 size={15} /></button></div>)}</section>
-      </div>
-      <Toast msg={toast} />
-    </div>
-  );
+  const tone = (s: Lead["status"]) => ({ "Шинэ": "blue", "Холбогдсон": "amber", "Санал илгээсэн": "violet", "Гэрээ": "green", "Татгалзсан": "red" })[s];
+  const pipe = leads.filter((l) => l.status !== "Татгалзсан").reduce((s, l) => s + l.value, 0), won = leads.filter((l) => l.status === "Гэрээ").length;
+  const d7 = Array.from({ length: 7 }, (_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d.toDateString(); });
+  const chart = d7.map((d) => leads.filter((l) => new Date(l.at).toDateString() === d).length);
+  const dash = (<div className="space-y-5"><div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4"><Kpi icon={Inbox} label="Нийт хүсэлт" value={leads.length} delta="+3 энэ 7 хоногт" /><Kpi icon={TrendingUp} label="Шинэ" value={leads.filter((l) => l.status === "Шинэ").length} /><Kpi icon={Wallet} label="Pipeline" value={money(pipe)} /><Kpi icon={Check} label="Гэрээ" value={won} /></div>
+    <div className="grid gap-5 xl:grid-cols-[1.6fr_1fr]"><Card title="Хүсэлт · сүүлийн 7 хоног"><BarChart data={chart} labels={d7.map((d) => d.slice(8, 10))} /></Card><Card title="Pipeline-ын шат"><div className="space-y-3">{ST.map((s) => { const n = leads.filter((l) => l.status === s).length; return <div key={s}><div className="mb-1 flex justify-between text-sm"><span>{s}</span><b>{n}</b></div><div className="h-2 rounded-full bg-[var(--soft)]"><div className="h-2 rounded-full bg-[var(--acc)]" style={{ width: `${(n / Math.max(1, leads.length)) * 100}%` }} /></div></div>; })}</div></Card></div></div>);
+  const inbox = (<Card><Table head={["Огноо", "Хүн / Компани", "Үйлчилгээ", "Хүсэлт", "Төлөв", ""]} rows={leads.map((l) => [fmtDate(l.at), <div key="n"><div className="font-semibold">{l.name}</div><div className="text-xs text-[var(--mut)]">{l.co} · {l.email}</div></div>, l.svc, <span key="m" className="line-clamp-2 max-w-xs text-xs">{l.msg}</span>, <div key="s" className="flex items-center gap-2"><Select value={l.status} options={ST} onChange={(v) => { setLeads((p) => p.map((x) => (x.id === l.id ? { ...x, status: v } : x))); say(`${l.name}: ${v}`); }} /></div>, <button key="d" aria-label="Устгах" className="text-[var(--mut)] hover:text-red-500" onClick={() => setLeads((p) => p.filter((x) => x.id !== l.id))}><Trash2 size={15} /></button>])} /></Card>);
+  const sv = (<div className="space-y-3">{svcs.map((s) => <Card key={s.id}><div className="flex flex-wrap items-center gap-3"><input value={s.t} onChange={(e) => setSvcs((p) => p.map((x) => (x.id === s.id ? { ...x, t: e.target.value } : x)))} className={`${inp} !w-56`} /><input value={s.d} onChange={(e) => setSvcs((p) => p.map((x) => (x.id === s.id ? { ...x, d: e.target.value } : x)))} className={`${inp} min-w-[200px] flex-1`} /><button className={s.on ? btnAcc : btnGhost} onClick={() => setSvcs((p) => p.map((x) => (x.id === s.id ? { ...x, on: !x.on } : x)))}>{s.on ? "Идэвхтэй" : "Нуугдсан"}</button><button className={btnGhost} aria-label="Устгах" onClick={() => setSvcs((p) => p.filter((x) => x.id !== s.id))}><Trash2 size={14} /></button></div></Card>)}<button className={btnAcc} onClick={() => { setSvcs((p) => [...p, { id: uid(), t: "Шинэ үйлчилгээ", d: "Тайлбар…", on: true }]); say("Нэмэгдлээ"); }}><Plus size={14} /> Үйлчилгээ нэмэх</button></div>);
+  return (<><AdminShell brand="Northwind" sub="CRM · Админ" acc="#3b82f6" back="/demo/company" tabs={[{ key: "d", label: "Хянах самбар", icon: LayoutDashboard, node: dash }, { key: "i", label: "Хүсэлтүүд", icon: Inbox, node: inbox }, { key: "s", label: "Үйлчилгээ", icon: Layers, node: sv }]} /><Toast msg={toast} /></>);
 }
