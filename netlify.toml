@@ -12,3 +12,7 @@
   NODE_VERSION = "22"
   # Prisma-гийн build үеийн телеметрийг унтраана
   NEXT_TELEMETRY_DISABLED = "1"
+  # DATABASE_URL нь зөвхөн локал SQLite файлын зам (нууц биш) бөгөөд
+  # .env.example болон кодын тайлбарт гардаг тул secrets scan-аас хасна.
+  # ADMIN_*, TURSO_* зэрэг жинхэнэ нууцууд шалгагдсаар байна.
+  SECRETS_SCAN_OMIT_KEYS = "DATABASE_URL"
