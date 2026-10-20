@@ -128,6 +128,15 @@ git push -u origin main
 > ⚠️ Netlify-ийн `ADMIN_PASSWORD`/`ADMIN_SECRET` нь локал `.env`-ээс
 > **заавал ялгаатай** байх ёстой. `.env` deploy-д орохгүй.
 
+#### Алдаа гарвал (troubleshooting)
+
+| Шинж тэмдэг | Шалтгаан / Шийдэл |
+|---|---|
+| Build `bun install` дээр унана | Repo-д `bun.lock` байгаа тул Netlify Bun-аар суулгаж байна. `git rm --cached bun.lock` хийгээд, `npm install --package-lock-only` ажиллуулж `package-lock.json`-ыг commit хийнэ. |
+| `/api/health` → `{"ok":false}` | `TURSO_DATABASE_URL`/`TURSO_AUTH_TOKEN` буруу эсвэл токен хүчингүй. Turso dashboard-оос шалгаад дахин оруулна. |
+| `/admin` дээр нэвтэрч чадахгүй | `ADMIN_PASSWORD` env зөв эсэх; deploy дараа env сольсон бол **Deploys → Trigger deploy** хийнэ. |
+| Хуудас ачаалагдаж байгаа ч өгөгдөл хоосон | `bun run db:turso` ажиллуулаагүй байна — Turso DB хоосон байна. |
+
 ---
 
 ## 5. Docker
