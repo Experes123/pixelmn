@@ -16,3 +16,8 @@
   # .env.example болон кодын тайлбарт гардаг тул secrets scan-аас хасна.
   # ADMIN_*, TURSO_* зэрэг жинхэнэ нууцууд шалгагдсаар байна.
   SECRETS_SCAN_OMIT_KEYS = "DATABASE_URL"
+
+# Next.js runtime-ийг тодорхой зааж өгнө. Үгүй бол `.next` хавтас статик
+# файл хэлбэрээр л publish хийгдэж, бүх хуудас 404 буцаадаг.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
