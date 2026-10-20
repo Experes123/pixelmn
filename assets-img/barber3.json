@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "beard trim straight razor barber",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d46a1251a98b.jpg",
+      "caption": "",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/85e694a79b30.jpg",
+      "caption": "",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7b60051ffb28.jpg",
+      "caption": "",
+      "source": "Canyon Ranch",
+      "original_width": "1500px",
+      "original_height": "1875px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/79497d45010c.jpg",
+      "caption": "",
+      "source": "Shutterstock",
+      "original_width": "1500px",
+      "original_height": "1101px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/57e673567c9f.jpg",
+      "caption": "",
+      "source": "Canyon Ranch",
+      "original_width": "1500px",
+      "original_height": "1875px"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# Админ панель хайлтын системд орохгүй
+Disallow: /admin
+# API замууд индексжихгүй
+Disallow: /api/

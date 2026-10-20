@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "query": "kimchi cabbage korean side dish",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/64eb46e20d96.jpg",
+      "caption": "",
+      "source": "The Kitchn",
+      "original_width": "3000px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c483046041f1.jpg",
+      "caption": "",
+      "source": "Maangchi",
+      "original_width": "1500px",
+      "original_height": "1185px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/303638bf98bf.png",
+      "caption": "",
+      "source": "Korean Bapsang",
+      "original_width": "1296px",
+      "original_height": "1936px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b53a1c73b1bd.jpg",
+      "caption": "",
+      "source": "Seonkyoung Longest",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8be7eaa1fb98.png",
+      "caption": "",
+      "source": "Longdan",
+      "original_width": "1920px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d9e1562479b0.jpg",
+      "caption": "",
+      "source": "Okonomi Kitchen",
+      "original_width": "800px",
+      "original_height": "1200px"
+    }
+  ]
+}

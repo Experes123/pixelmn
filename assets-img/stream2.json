@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "neon city street night cinematic",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/45f22b124171.jpg",
+      "caption": "",
+      "source": "Reddit",
+      "original_width": "1080px",
+      "original_height": "1440px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2d21ff5578d8.jpg",
+      "caption": "",
+      "source": "ComfyUI Newsletter",
+      "original_width": "1360px",
+      "original_height": "768px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/0cd0499d6b11.jpg",
+      "caption": "",
+      "source": "Unsplash",
+      "original_width": "3000px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6899e96f3bdd.jpg",
+      "caption": "",
+      "source": "Wallpaper Abyss - Alpha Coders",
+      "original_width": "1920px",
+      "original_height": "1440px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/70fdd6626d77.jpg",
+      "caption": "",
+      "source": "Unreal Engine Forums",
+      "original_width": "1280px",
+      "original_height": "720px"
+    }
+  ]
+}

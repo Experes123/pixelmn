@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "steamed mongolian dumplings buuz plate food",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a5283209b4e6.jpg",
+      "caption": "",
+      "source": "Times Food",
+      "original_width": "1200px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2d20bf9fcbe6.jpg",
+      "caption": "",
+      "source": "Dreamstime",
+      "original_width": "1600px",
+      "original_height": "1004px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/0d2be759bd86.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "1261px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c5b5e0a4d47f.jpg",
+      "caption": "",
+      "source": "Reddit",
+      "original_width": "1536px",
+      "original_height": "2048px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ae7148d14b27.jpg",
+      "caption": "",
+      "source": "Correct Mongolia",
+      "original_width": "1280px",
+      "original_height": "720px"
+    }
+  ]
+}

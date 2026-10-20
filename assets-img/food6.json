@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "golden fried pastry dumplings",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a14ad006d17b.jpg",
+      "caption": "",
+      "source": "Cook it Real Good",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f7e35865f97d.jpg",
+      "caption": "",
+      "source": "Taste of Home",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/611af36992c6.jpg",
+      "caption": "",
+      "source": "Shaken Together",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/55a011549cd3.jpg",
+      "caption": "",
+      "source": "The Flavor Bender",
+      "original_width": "1000px",
+      "original_height": "1510px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6d3adab95a5f.jpeg",
+      "caption": "",
+      "source": "Reddit",
+      "original_width": "1440px",
+      "original_height": "1920px"
+    }
+  ]
+}

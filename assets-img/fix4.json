@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "query": "fresh garden vegetable salad bowl",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/dd1568e663eb.jpg",
+      "caption": "",
+      "source": "www.recipetineats.com",
+      "original_width": "900px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a362ce6244dd.jpg",
+      "caption": "",
+      "source": "www.peanutblossom.com",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ff7b6dddc4b6.jpg",
+      "caption": "",
+      "source": "www.tasteofhome.com",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b54c23e3fc20.jpg",
+      "caption": "",
+      "source": "ferrymorse.com",
+      "original_width": "3920px",
+      "original_height": "2161px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e89756ef7a78.jpg",
+      "caption": "",
+      "source": "happyhealthymama.com",
+      "original_width": "1373px",
+      "original_height": "1800px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/63903c69d56c.jpg",
+      "caption": "",
+      "source": "www.veggieinspired.com",
+      "original_width": "1200px",
+      "original_height": "1800px"
+    }
+  ]
+}

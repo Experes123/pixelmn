@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "engineer construction site tablet helmet",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c98ea727e59f.jpg",
+      "caption": "",
+      "source": "Unsplash",
+      "original_width": "3000px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7701b1013872.jpg",
+      "caption": "",
+      "source": "DepositPhotos",
+      "original_width": "1068px",
+      "original_height": "1700px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/373e2520fdee.jpeg",
+      "caption": "",
+      "source": "Pexels",
+      "original_width": "1125px",
+      "original_height": "750px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/791577d66d66.jpg",
+      "caption": "",
+      "source": "Unsplash",
+      "original_width": "3000px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/683bbb1fd407.png",
+      "caption": "",
+      "source": "Shook Construction",
+      "original_width": "2100px",
+      "original_height": "1600px"
+    }
+  ]
+}

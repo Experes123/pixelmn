@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "chocolate cake slice dessert",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e008660099fa.jpg",
+      "caption": "",
+      "source": "Feeding Your Fam",
+      "original_width": "800px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d4356827f3f3.jpg",
+      "caption": "",
+      "source": "OMG Chocolate Desserts",
+      "original_width": "977px",
+      "original_height": "1302px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5e294d441b29.png",
+      "caption": "",
+      "source": "Feels Like Home Blog",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2c89999ea98c.jpg",
+      "caption": "",
+      "source": "The First Year Blog",
+      "original_width": "1200px",
+      "original_height": "1798px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8dfff1dc225f.jpg",
+      "caption": "",
+      "source": "ZoëBakes Newsletter - Substack",
+      "original_width": "1000px",
+      "original_height": "1499px"
+    }
+  ]
+}

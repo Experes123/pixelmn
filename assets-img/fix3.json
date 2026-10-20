@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "query": "meat soup bowl with vegetables",
+  "count": 4,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5b33c9872416.jpg",
+      "caption": "",
+      "source": "meikoandthedish.com",
+      "original_width": "1000px",
+      "original_height": "1500px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/65247ef5ae87.jpg",
+      "caption": "",
+      "source": "calliesbiscuits.com",
+      "original_width": "4167px",
+      "original_height": "4167px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/042542d462ea.jpg",
+      "caption": "",
+      "source": "groundbeefrecipes.com",
+      "original_width": "1200px",
+      "original_height": "1798px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5e2af85f3983.jpg",
+      "caption": "",
+      "source": "www.recipetineats.com",
+      "original_width": "900px",
+      "original_height": "1260px"
+    }
+  ]
+}

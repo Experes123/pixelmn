@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "stylish man portrait haircut barbershop",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e0e640c2f04c.jpg",
+      "caption": "",
+      "source": "www.alamy.com",
+      "original_width": "1300px",
+      "original_height": "957px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ebc0fc3d6bd0.jpg",
+      "caption": "",
+      "source": "www.amazon.com",
+      "original_width": "894px",
+      "original_height": "903px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6dbb17035ed4.jpeg",
+      "caption": "",
+      "source": "www.pexels.com",
+      "original_width": "3456px",
+      "original_height": "5184px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/06c3e4cc0b58.png",
+      "caption": "",
+      "source": "sevenpotions.com",
+      "original_width": "1536px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/4037b0244029.png",
+      "caption": "",
+      "source": "blumaan.com",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    }
+  ]
+}

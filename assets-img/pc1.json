@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "gaming computer setup rgb lights dark room",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3e88e3b44447.jpg",
+      "caption": "",
+      "source": "Reddit",
+      "original_width": "3024px",
+      "original_height": "4032px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f0e7293e0240.png",
+      "caption": "",
+      "source": "Bestier",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/29b5ef1bb315.jpg",
+      "caption": "",
+      "source": "Govee",
+      "original_width": "1230px",
+      "original_height": "1197px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c8e6f2b4183b.jpg",
+      "caption": "",
+      "source": "IKEA",
+      "original_width": "1400px",
+      "original_height": "787px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8f8204007afb.png",
+      "caption": "",
+      "source": "KTC",
+      "original_width": "1283px",
+      "original_height": "733px"
+    }
+  ]
+}

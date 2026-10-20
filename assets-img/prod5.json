@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "folded wool blanket neutral color",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ed7e9fa19585.jpg",
+      "caption": "",
+      "source": "Cozy Earth",
+      "original_width": "1867px",
+      "original_height": "2400px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ce7d19be2996.jpg",
+      "caption": "",
+      "source": "Scooms",
+      "original_width": "1510px",
+      "original_height": "1510px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/268ab3f62ed1.jpg",
+      "caption": "",
+      "source": "Boll & Branch",
+      "original_width": "1660px",
+      "original_height": "1594px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b16dad8d04d8.jpg",
+      "caption": "",
+      "source": "Fine Linen and Bath",
+      "original_width": "1100px",
+      "original_height": "1264px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/9de59160d290.jpg",
+      "caption": "",
+      "source": "Ecualama",
+      "original_width": "1600px",
+      "original_height": "1600px"
+    }
+  ]
+}

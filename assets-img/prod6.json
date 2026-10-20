@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "handmade brown leather wallet",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/9d24757b6142.jpg",
+      "caption": "",
+      "source": "Den Raven Leather",
+      "original_width": "3024px",
+      "original_height": "3024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/688230ff84b5.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "1489px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d91066746597.jpg",
+      "caption": "",
+      "source": "TTpen",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/796029720080.webp",
+      "caption": "",
+      "source": "tascony",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c3fe8c952054.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "1611px",
+      "original_height": "1000px"
+    }
+  ]
+}

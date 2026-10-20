@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "query": "fresh fruit juice glass",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d00e150ab70b.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "848px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/80b1f489e118.jpeg",
+      "caption": "",
+      "source": "Pexels",
+      "original_width": "3456px",
+      "original_height": "5184px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/28306bf12ce5.jpg",
+      "caption": "",
+      "source": "Bespoke Bar L.A.",
+      "original_width": "1445px",
+      "original_height": "1927px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/128837b14f1d.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "924px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/de50a466e2d5.jpg",
+      "caption": "",
+      "source": "Costco Wholesale",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/789e7b1b246c.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "841px",
+      "original_height": "1000px"
+    }
+  ]
+}

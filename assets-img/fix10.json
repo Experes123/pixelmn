@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "query": "barber shaving client straight razor",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/57e673567c9f.jpg",
+      "caption": "",
+      "source": "Canyon Ranch",
+      "original_width": "1500px",
+      "original_height": "1875px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/4fdbdedc1c85.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "957px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/641c99de5fd1.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "972px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/57b467c0ba65.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "957px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/db1e9b03c17b.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "2500px",
+      "original_height": "2500px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ab8c5c339c17.jpg",
+      "caption": "",
+      "source": "eBay",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    }
+  ]
+}

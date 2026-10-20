@@ -1,0 +1,281 @@
+// Pixelmn — бүрэн багц схем
+// Гол сайт + 6 демо вэбсайтын өгөгдлийн загварууд.
+// Жишээ: бүх ID нь cuid, мөнгөн дүнгүүд нь төгөл (MNT) бүхэл тоогоор.
+
+generator client {
+  provider = "prisma-client-js"
+  // native — локал (Windows/Linux) build
+  // rhel-openssl-3.0.x — Netlify Functions (AWS Lambda)
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ────────────────────────── ҮНДСЭН САЙТ ──────────────────────────
+
+// Төслийн хүсэлтүүд (үндсэн сайтын маягтаас)
+model Inquiry {
+  id          String   @id @default(cuid())
+  name        String
+  email       String
+  company     String?
+  serviceType String
+  budget      String
+  details     String
+  status      String   @default("шинэ") // шинэ | хариулсан | хаагдсан
+  meta        Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// Засварлагдах сайт агуулга (үнэ, текст гэх мэт) — түлхүүрээр
+model SiteContent {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  label     String?
+  value     Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ────────────────────────── ДЕМО 1: ГАН Barbershop ──────────────────────────
+
+model BarberService {
+  id          String  @id @default(cuid())
+  name        String
+  category    String // үс | сахлис | хосолсон | арчилгаа
+  price       Int // төглөг
+  durationMin Int
+  description String
+  active      Boolean @default(true)
+  meta        Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Barber {
+  id          String  @id @default(cuid())
+  name        String
+  title       String // ажлын албан тушаал
+  bio         String
+  specialties String // таслалаар тусгаарласан
+  imageUrl    String?
+  active      Boolean @default(true)
+  meta        Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model BarberBooking {
+  id            String   @id @default(cuid())
+  serviceId     String?
+  serviceName   String
+  barberId      String?
+  barberName    String
+  date          String // YYYY-MM-DD
+  time          String // HH:mm
+  customerName  String
+  phone         String
+  email         String?
+  notes         String?
+  status        String   @default("хүлээгдэж буй") // хүлээгдэж буй | баталгаажсан | дууссан | цуцлагдсан
+  paymentStatus String   @default("төлөгдөөгүй") // төлөгдөөгүй | төлөгдсөн | буцаагдсан
+  totalAmount   Int
+  meta          Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+// ────────────────────────── ДЕМО 2: ШОНХОР Gaming Café ──────────────────────────
+
+model PcStation {
+  id           String  @id @default(cuid())
+  name         String
+  zone         String // Стандарт | VIP | Консоль
+  cpu          String
+  gpu          String
+  ram          String
+  extras       String? // давуу тал: 240Hz монитор гэх мэт
+  pricePerHour Int
+  status       String  @default("боломжтой") // боломжтой | эзлэгдсэн | засварласан
+  active       Boolean @default(true)
+  meta         Json?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model PcBooking {
+  id            String   @id @default(cuid())
+  stationId     String?
+  stationName   String
+  zone          String
+  date          String
+  startTime     String
+  hours         Int
+  customerName  String
+  phone         String
+  status        String   @default("идэвхтэй") // идэвхтэй | дууссан | цуцлагдсан
+  paymentStatus String   @default("төлөгдөөгүй")
+  totalAmount   Int
+  meta          Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+// ────────────────────────── ДЕМО 3: ӨРГӨӨ Ресторан ──────────────────────────
+
+model MenuItem {
+  id          String  @id @default(cuid())
+  name        String
+  description String
+  category    String // нэйлэг | зүсэмж | хөнгөн | амттан | уух зүйл
+  price       Int
+  imageUrl    String?
+  spicy       Boolean @default(false)
+  available   Boolean @default(true)
+  popular     Boolean @default(false)
+  meta        Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model RestaurantOrder {
+  id            String   @id @default(cuid())
+  customerName  String
+  phone         String
+  address       String
+  notes         String?
+  items         Json // [{id,name,price,qty,options[]}]
+  subtotal      Int
+  deliveryFee   Int
+  total         Int
+  status        String   @default("хүлээн авсан") // хүлээн авсан | бэлтгэж байна | хүргэлтэд гарсан | хүргэгдсэн | цуцлагдсан
+  paymentStatus String   @default("төлөгдөөгүй")
+  meta          Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+// ────────────────────────── ДЕМО 4: ТЭМҮҮР Групп ──────────────────────────
+
+model CompanyService {
+  id          String  @id @default(cuid())
+  title       String
+  description String
+  icon        String // lucide icon нэр
+  order       Int     @default(0)
+  active      Boolean @default(true)
+  meta        Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model CompanyProject {
+  id          String  @id @default(cuid())
+  title       String
+  description String
+  category    String
+  year        String
+  imageUrl    String?
+  order       Int     @default(0)
+  active      Boolean @default(true)
+  meta        Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model CompanyInquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  status    String   @default("шинэ") // шинэ | уншсан | хариулсан
+  meta      Json?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model CompanyContent {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  label     String?
+  value     String // текст агуулга
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ────────────────────────── ДЕМО 5: ҮЗЭГ Стриминг ──────────────────────────
+
+model StreamTitle {
+  id             String  @id @default(cuid())
+  title          String
+  type           String // кино | цуврал | баримтат
+  genre          String // Драм, Адал явдал...
+  year           Int
+  rating         Float // 10-аас
+  duration       String // "1 ц 52 мин" эсвэл "2 Анги"
+  description    String
+  posterGradient String // CSS gradient тэмдэгт
+  backdropUrl    String?
+  videoUrl       String? // нээлттэй эхийн тоглоомын видеоны холбоос
+  featured       Boolean @default(false)
+  isNew          Boolean @default(false)
+  active         Boolean @default(true)
+  meta           Json?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model StreamSub {
+  id           String   @id @default(cuid())
+  plan         String // Сар | Жил | Гэр бүл
+  customerName String
+  email        String
+  amount       Int
+  status       String   @default("идэвхтэй") // идэвхтэй | цуцлагдсан
+  meta         Json?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// ────────────────────────── ДЕМО 6: НУТАГ Цахим худалдаа ──────────────────────────
+
+model Product {
+  id          String  @id @default(cuid())
+  name        String
+  description String
+  category    String // арьсан эдлэл | эсгий бүтээгдэхүүн | цай | гэр ахуй | аялал
+  price       Int
+  oldPrice    Int?
+  stock       Int
+  imageUrl    String?
+  options     Json? // [{name:"Өнгө",values:["Күрэн","Хар"]}]
+  featured    Boolean @default(false)
+  active      Boolean @default(true)
+  meta        Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ShopOrder {
+  id            String   @id @default(cuid())
+  customerName  String
+  phone         String
+  email         String?
+  city          String
+  address       String
+  notes         String?
+  items         Json // [{id,name,price,qty,option}]
+  subtotal      Int
+  deliveryFee   Int
+  total         Int
+  status        String   @default("бүртгэгдсэн") // бүртгэгдсэн | баглааж байна | хүргэлтэд | хүргэгдсэн | цуцлагдсан
+  paymentStatus String   @default("төлөгдөөгүй")
+  meta          Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

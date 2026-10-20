@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "handmade ceramic mug pottery beige",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7b270037ed40.jpg",
+      "caption": "",
+      "source": "Pottery For The Planet",
+      "original_width": "1600px",
+      "original_height": "1600px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/23924cbc3590.jpg",
+      "caption": "",
+      "source": "Earthen Shop",
+      "original_width": "1000px",
+      "original_height": "1500px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d10291c2fc43.jpeg",
+      "caption": "",
+      "source": "Walmart",
+      "original_width": "1600px",
+      "original_height": "1600px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/033ad5d16b0e.jpg",
+      "caption": "",
+      "source": "Fengany",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b13db0500c79.jpg",
+      "caption": "",
+      "source": "Ribera Handmade Ceramics",
+      "original_width": "1404px",
+      "original_height": "1404px"
+    }
+  ]
+}

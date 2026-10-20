@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "fried rice with beef plate",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3ce4a97211d6.jpg",
+      "caption": "",
+      "source": "Delightful Plate",
+      "original_width": "2050px",
+      "original_height": "3075px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5fec2ebb9af0.jpg",
+      "caption": "",
+      "source": "My Morning Mocha",
+      "original_width": "1920px",
+      "original_height": "1080px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/00d86de40bda.jpg",
+      "caption": "",
+      "source": "Slimming Eats",
+      "original_width": "1200px",
+      "original_height": "1800px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1dab9087c01e.jpg",
+      "caption": "",
+      "source": "Hello Fresh",
+      "original_width": "1504px",
+      "original_height": "1004px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/92493fe10838.jpg",
+      "caption": "",
+      "source": "The Recipe Life",
+      "original_width": "768px",
+      "original_height": "1024px"
+    }
+  ]
+}

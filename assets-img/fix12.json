@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "query": "fried rice with meat plate",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/0666c2185f69.jpg",
+      "caption": "",
+      "source": "RecipeTin Eats",
+      "original_width": "900px",
+      "original_height": "1125px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/571e1ac2f7a4.jpg",
+      "caption": "",
+      "source": "Cook What You Love",
+      "original_width": "1200px",
+      "original_height": "800px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/9b797a278627.jpg",
+      "caption": "",
+      "source": "Today Show",
+      "original_width": "1500px",
+      "original_height": "750px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/10a12f40cc88.jpg",
+      "caption": "",
+      "source": "Eating Thai Food",
+      "original_width": "2400px",
+      "original_height": "1600px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/906b71d77f6a.jpeg",
+      "caption": "",
+      "source": "Tastyble",
+      "original_width": "2000px",
+      "original_height": "1125px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/593af36559ae.jpg",
+      "caption": "",
+      "source": "Taste of Home",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    }
+  ]
+}

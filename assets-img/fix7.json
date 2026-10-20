@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "query": "milk tea cup cozy",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/27342b87af81.jpg",
+      "caption": "",
+      "source": "Etsy",
+      "original_width": "2342px",
+      "original_height": "3000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d985e8c381b5.png",
+      "caption": "",
+      "source": "Retea",
+      "original_width": "1100px",
+      "original_height": "1100px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/38e30a96f035.jpg",
+      "caption": "",
+      "source": "Magnolia Needlepoint",
+      "original_width": "1946px",
+      "original_height": "1946px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f1e37ca0bf8c.jpeg",
+      "caption": "",
+      "source": "White Lilac Farmhouse",
+      "original_width": "900px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/bf4116ad89b7.jpg",
+      "caption": "",
+      "source": "Pinterest",
+      "original_width": "736px",
+      "original_height": "1308px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/97d292a6f4d0.jpg",
+      "caption": "",
+      "source": "Taobao.com",
+      "original_width": "1280px",
+      "original_height": "1280px"
+    }
+  ]
+}

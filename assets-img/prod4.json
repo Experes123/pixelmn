@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "loose leaf tea leaves scoop",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/95dc970170dc.jpg",
+      "caption": "",
+      "source": "Helpshift",
+      "original_width": "1500px",
+      "original_height": "1500px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d4894aad99a3.jpg",
+      "caption": "",
+      "source": "eBay",
+      "original_width": "1500px",
+      "original_height": "1433px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7594132cfe95.jpg",
+      "caption": "",
+      "source": "The Whistling Kettle",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ad41441d4a54.jpg",
+      "caption": "",
+      "source": "The Tea Makers of London",
+      "original_width": "1600px",
+      "original_height": "1600px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8136b8d42641.jpg",
+      "caption": "",
+      "source": "Reddit",
+      "original_width": "2296px",
+      "original_height": "4080px"
+    }
+  ]
+}

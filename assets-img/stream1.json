@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "moody cinematic mountain landscape dark",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/84eab4098d72.jpeg",
+      "caption": "",
+      "source": "Pexels",
+      "original_width": "6885px",
+      "original_height": "4534px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/da524f152d2d.jpg",
+      "caption": "",
+      "source": "Pinterest",
+      "original_width": "736px",
+      "original_height": "1308px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e32d0f7304e4.jpg",
+      "caption": "",
+      "source": "Leonardo AI",
+      "original_width": "768px",
+      "original_height": "1360px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1565637c9732.jpg",
+      "caption": "",
+      "source": "Unsplash",
+      "original_width": "3000px",
+      "original_height": "2001px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3261a44263db.jpg",
+      "caption": "",
+      "source": "Unsplash",
+      "original_width": "3000px",
+      "original_height": "4500px"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "query": "golden fried dumplings on plate",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/dc94ec3cdb73.jpg",
+      "caption": "",
+      "source": "RecipeTin Eats",
+      "original_width": "964px",
+      "original_height": "1350px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/087781199d03.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "957px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d9474ecc03d6.jpg",
+      "caption": "",
+      "source": "Dreamstime.com",
+      "original_width": "1600px",
+      "original_height": "963px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/49247687170f.jpg",
+      "caption": "",
+      "source": "Yelp",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8ea788b9487e.jpg",
+      "caption": "",
+      "source": "The Yummy Bowl",
+      "original_width": "1200px",
+      "original_height": "1798px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7b462cf52bc6.jpeg",
+      "caption": "",
+      "source": "Reddit",
+      "original_width": "2252px",
+      "original_height": "4000px"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# ───────────────── Pixelmn — production compose ─────────────────
+# Ажиллуулах:
+#   docker compose up -d --build
+#
+# Урьдчилсан нөхцөл: ижил хавтсанд .env файл байх ба дотор нь
+#   ADMIN_PASSWORD=...
+#   ADMIN_SECRET=...
+# байх ёстой (docker compose эдгээрийг ${...} хэлбэрээр уншина).
+# Төслийн .env-ийг хуулж, утгуудыг нь ЗААВАЛ солино уу.
+
+services:
+  pixelmn:
+    build: .
+    image: pixelmn
+    container_name: pixelmn
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      # SQLite файл — absolute зам (харьцангуй зам runtime-д эрсдэлтэй)
+      DATABASE_URL: "file:/app/db/custom.db"
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?ADMIN_PASSWORD-ийг .env файлд тохируулна уу}
+      ADMIN_SECRET: ${ADMIN_SECRET:?ADMIN_SECRET-ийг .env файлд тохируулна уу}
+    volumes:
+      # Өгөгдлийн сан ба түүний нөөц — volume дотор тогтвортой үлдэнэ
+      - pixelmn-db:/app/db
+
+volumes:
+  pixelmn-db:

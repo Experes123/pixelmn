@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "query": "fresh vegetable salad bowl healthy",
+  "count": 3,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a72244183245.jpg",
+      "caption": "",
+      "source": "VectorStock",
+      "original_width": "1000px",
+      "original_height": "805px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/38755f6f66d4.jpg",
+      "caption": "",
+      "source": "Simply Stacie",
+      "original_width": "1000px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c7f40d1fee89.jpg",
+      "caption": "",
+      "source": "Love and Lemons",
+      "original_width": "1740px",
+      "original_height": "2417px"
+    }
+  ]
+}

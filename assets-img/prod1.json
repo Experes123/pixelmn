@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "handmade brown leather bag",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/157c0f2e4a90.png",
+      "caption": "",
+      "source": "Ranch Junkie",
+      "original_width": "2000px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/4bfd671bae14.png",
+      "caption": "",
+      "source": "KMM & Co.",
+      "original_width": "1100px",
+      "original_height": "1100px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/77e5b3c12bd8.jpg",
+      "caption": "",
+      "source": "Meanwhile Back on the Farm",
+      "original_width": "800px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/9026ffd3da50.jpg",
+      "caption": "",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7e933bf43e80.jpg",
+      "caption": "",
+      "source": "American West Handcrafted Leather",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "success": true,
+  "query": "modern barber shop interior moody dark",
+  "count": 8,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e795411d6038.png",
+      "caption": "",
+      "source": "Pinterest",
+      "original_width": "1000px",
+      "original_height": "1500px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1a22c974e113.jpg",
+      "caption": "",
+      "source": "Peerspace",
+      "original_width": "3840px",
+      "original_height": "2560px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/19d2553bb0f6.jpg",
+      "caption": "",
+      "source": "Pinterest",
+      "original_width": "1400px",
+      "original_height": "1400px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/559e9ff979d2.jpg",
+      "caption": "",
+      "source": "Etsy",
+      "original_width": "3000px",
+      "original_height": "2250px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5e4da226f6cb.jpg",
+      "caption": "",
+      "source": "Canadian Interiors",
+      "original_width": "1200px",
+      "original_height": "800px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3ff8b2e6517f.jpg",
+      "caption": "",
+      "source": "Etsy",
+      "original_width": "1536px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8f2d33a0d6d4.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ab500082aa9f.jpg",
+      "caption": "",
+      "source": "Peerspace",
+      "original_width": "3840px",
+      "original_height": "5120px"
+    }
+  ]
+}

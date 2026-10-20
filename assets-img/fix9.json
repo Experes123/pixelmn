@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "query": "barber portrait professional man",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ad6b5faf5e3a.jpg",
+      "caption": "",
+      "source": "www.alamy.com",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e066d713f3f2.jpg",
+      "caption": "",
+      "source": "www.alamy.com",
+      "original_width": "1300px",
+      "original_height": "957px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6b44f125712f.jpg",
+      "caption": "",
+      "source": "www.pinterest.com",
+      "original_width": "736px",
+      "original_height": "1104px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8aaab110348a.jpg",
+      "caption": "",
+      "source": "www.alamy.com",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b445500aa639.jpeg",
+      "caption": "",
+      "source": "www.pexels.com",
+      "original_width": "5464px",
+      "original_height": "8192px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6ccc2727cc82.jpeg",
+      "caption": "",
+      "source": "thebeautyinstitute.edu",
+      "original_width": "1200px",
+      "original_height": "800px"
+    }
+  ]
+}

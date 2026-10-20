@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "modern glass office building architecture",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1e9fe81a5d4a.jpg",
+      "caption": "",
+      "source": "AMDG Architects",
+      "original_width": "2560px",
+      "original_height": "1706px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ddd00d53260d.jpg",
+      "caption": "",
+      "source": "Design Milk",
+      "original_width": "810px",
+      "original_height": "1215px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/152527ba09b8.jpg",
+      "caption": "",
+      "source": "www.wallpaper.com",
+      "original_width": "1366px",
+      "original_height": "1366px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3443d61114c4.jpg",
+      "caption": "",
+      "source": "Contemporist",
+      "original_width": "1920px",
+      "original_height": "1280px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d1018b988594.jpg",
+      "caption": "",
+      "source": "Interior Design Magazine",
+      "original_width": "1500px",
+      "original_height": "923px"
+    }
+  ]
+}

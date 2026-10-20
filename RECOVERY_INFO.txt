@@ -1,0 +1,5 @@
+Recovered project source bundle
+Files included: 204
+Excluded for safety/cleanup: .env, .git (history), tool-results/, worklog.md, runtime PID files, node_modules, and .next build output.
+The inspected TypeScript/TSX source files were readable. No obvious encrypted or obfuscated source files were detected in src/, examples/, or prisma/.
+The original archive includes .env and Git history, so keep it private. If .env contained active credentials, rotate them.

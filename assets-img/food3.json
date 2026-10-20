@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "query": "asian beef noodle soup bowl chopsticks",
+  "count": 4,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3596096cb700.jpg",
+      "caption": "",
+      "source": "Saveur",
+      "original_width": "1440px",
+      "original_height": "1080px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c56737875b2d.jpg",
+      "caption": "",
+      "source": "The Kitchn",
+      "original_width": "1500px",
+      "original_height": "844px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c8e259ece736.jpg",
+      "caption": "",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7ac15ab6e21f.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "866px",
+      "original_height": "1390px"
+    }
+  ]
+}

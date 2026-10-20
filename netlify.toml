@@ -1,0 +1,14 @@
+# ───────────────── Netlify тохиргоо ─────────────────
+# Next.js 16-г OpenNext adapter-оор автоматаар build хийнэ.
+# Локал standalone build-ийг ашиглахгүй (next.config.ts дээр NETLIFY=true
+# үед output: "standalone" автоматаар унтарна).
+
+[build]
+  # prisma generate (rhel engine-тэй) + next build
+  command = "npm run build:netlify"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Prisma-гийн build үеийн телеметрийг унтраана
+  NEXT_TELEMETRY_DISABLED = "1"

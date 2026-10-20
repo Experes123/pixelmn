@@ -1,0 +1,27 @@
+# ── Build context-оос хасах зүйлс ──
+
+# Хамаарал ба build гаралт (image дотор дахин үүснэ)
+node_modules
+.next
+
+# Хувилбар удирдлага
+.git
+.gitignore
+
+# Секретүүд — image дотор ХЭЗЭЭ Ч орохгүй (runtime дээр env-ээр өгнө)
+.env
+.env.*
+!.env.example
+
+# Лог, түр файлууд
+*.log
+dev.log
+server.log
+build.log
+backups
+
+# Doc болон хөгжүүлэлтийн туслах хавтаснууд
+skills
+.claude
+.z-ai-config
+.local

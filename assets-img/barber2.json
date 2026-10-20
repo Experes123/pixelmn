@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "barber cutting hair with clippers client",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/68513c0c301a.jpeg",
+      "caption": "",
+      "source": "Pexels",
+      "original_width": "2654px",
+      "original_height": "3975px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a1638df3b701.jpg",
+      "caption": "",
+      "source": "Men's Health",
+      "original_width": "1200px",
+      "original_height": "1195px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ab186ae2cb16.jpeg",
+      "caption": "",
+      "source": "Freshly Faded Barber + Shop",
+      "original_width": "1936px",
+      "original_height": "2592px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/068db58204be.jpg",
+      "caption": "",
+      "source": "Sam Villa",
+      "original_width": "1200px",
+      "original_height": "800px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d226f90c3bde.jpg",
+      "caption": "",
+      "source": "StyleSeat",
+      "original_width": "1140px",
+      "original_height": "850px"
+    }
+  ]
+}

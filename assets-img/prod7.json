@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "hammered copper mug cup",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/121593ce76a0.png",
+      "caption": "",
+      "source": "Copper Mug Co.",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/fd20cf2070cb.jpg",
+      "caption": "",
+      "source": "Fish On! Custom Rods",
+      "original_width": "1445px",
+      "original_height": "1445px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/488ce438d5a1.jpg",
+      "caption": "",
+      "source": "Moscow Copper Co.",
+      "original_width": "900px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c564aa01ef00.jpeg",
+      "caption": "",
+      "source": "Walmart",
+      "original_width": "3000px",
+      "original_height": "3000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ef065d04b45f.jpg",
+      "caption": "",
+      "source": "Iuris.doc",
+      "original_width": "1946px",
+      "original_height": "1946px"
+    }
+  ]
+}

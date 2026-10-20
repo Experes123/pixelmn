@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "barbershop interior vintage chairs mirror",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b83ec2988428.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "1065px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/45d79d8edd08.png",
+      "caption": "",
+      "source": "Alibaba",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/efca56e0a665.jpg",
+      "caption": "",
+      "source": "StockCake",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7e5ba7d5a2bf.jpg",
+      "caption": "",
+      "source": "StockCake",
+      "original_width": "816px",
+      "original_height": "1456px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2cb224ca678c.jpg",
+      "caption": "",
+      "source": "Artist hand",
+      "original_width": "1080px",
+      "original_height": "1920px"
+    }
+  ]
+}

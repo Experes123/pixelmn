@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "business team meeting conference room",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/43db3fb5111b.jpg",
+      "caption": "",
+      "source": "WeWork India",
+      "original_width": "7732px",
+      "original_height": "4879px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e8447e5817c9.jpg",
+      "caption": "",
+      "source": "YouWorkForThem",
+      "original_width": "1184px",
+      "original_height": "721px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6f09330dde9d.jpg",
+      "caption": "",
+      "source": "Dreamstime",
+      "original_width": "1600px",
+      "original_height": "1157px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a1ac378cc171.jpg",
+      "caption": "",
+      "source": "Deposit Photos",
+      "original_width": "1600px",
+      "original_height": "1167px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/092b53225099.jpeg",
+      "caption": "",
+      "source": "Paradigm International",
+      "original_width": "4096px",
+      "original_height": "2304px"
+    }
+  ]
+}

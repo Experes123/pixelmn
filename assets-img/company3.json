@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "logistics freight trucks warehouse",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f733ca05dcae.png",
+      "caption": "",
+      "source": "Xentra Transport",
+      "original_width": "2612px",
+      "original_height": "1477px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f5978cd56f6a.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "953px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1b281f1bb7ba.jpg",
+      "caption": "",
+      "source": "Unsplash",
+      "original_width": "3000px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/fdc7f5f8b1c6.png",
+      "caption": "",
+      "source": "OPTEX ASEAN",
+      "original_width": "1918px",
+      "original_height": "895px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7713332540f5.jpg",
+      "caption": "",
+      "source": "VectorStock",
+      "original_width": "1000px",
+      "original_height": "1080px"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "query": "salted milk tea traditional bowl",
+  "count": 3,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/722e9f226731.jpg",
+      "caption": "",
+      "source": "Reddit",
+      "original_width": "1080px",
+      "original_height": "1080px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/45c245036c3b.jpg",
+      "caption": "",
+      "source": "NYT Cooking - The New York Times",
+      "original_width": "1800px",
+      "original_height": "1800px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/22e6e4263905.jpg",
+      "caption": "",
+      "source": "Hungry Huy",
+      "original_width": "2000px",
+      "original_height": "1333px"
+    }
+  ]
+}

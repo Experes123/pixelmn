@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "hiking backpack olive green outdoor",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f609bcd5fced.jpg",
+      "caption": "",
+      "source": "Amazon.com",
+      "original_width": "1093px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/0bdc94ac6409.jpg",
+      "caption": "",
+      "source": "moxule",
+      "original_width": "1600px",
+      "original_height": "1600px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/702f289d36d3.jpg",
+      "caption": "",
+      "source": "klub300.cz",
+      "original_width": "1280px",
+      "original_height": "852px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7ea37c581308.png",
+      "caption": "",
+      "source": "The North Face",
+      "original_width": "2000px",
+      "original_height": "2500px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d64b3584ba8b.png",
+      "caption": "",
+      "source": "JanSport",
+      "original_width": "1600px",
+      "original_height": "1860px"
+    }
+  ]
+}

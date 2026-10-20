@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "mechanical keyboard rgb closeup dark",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/467a2461e5eb.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d07db03d428a.jpg",
+      "caption": "",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "956px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d7272b668892.jpg",
+      "caption": "",
+      "source": "Redragon",
+      "original_width": "1200px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5abd0484ccb1.jpg",
+      "caption": "",
+      "source": "XDA Developers",
+      "original_width": "1266px",
+      "original_height": "844px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ce4475d3a6eb.jpg",
+      "caption": "",
+      "source": "The Verge",
+      "original_width": "2040px",
+      "original_height": "1061px"
+    }
+  ]
+}

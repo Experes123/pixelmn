@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "query": "grilled lamb meat skewers dish",
+  "count": 5,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5e0bff4d8683.jpg",
+      "caption": "",
+      "source": "Omnivore's Cookbook",
+      "original_width": "800px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5c89c4927295.jpg",
+      "caption": "",
+      "source": "The Guardian",
+      "original_width": "1200px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5d347aebe964.jpg",
+      "caption": "",
+      "source": "Poet and Flower",
+      "original_width": "1104px",
+      "original_height": "1380px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7efe3e0309c0.jpg",
+      "caption": "",
+      "source": "Omnivore's Cookbook",
+      "original_width": "800px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5b446fc2e3f2.jpg",
+      "caption": "",
+      "source": "Foodle Club",
+      "original_width": "1200px",
+      "original_height": "1551px"
+    }
+  ]
+}
